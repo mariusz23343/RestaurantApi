@@ -31,7 +31,7 @@ var authenticationSetting = new AuthenticationSettings();
 
 builder.Configuration.GetSection("Authentication").Bind(authenticationSetting); //ladnie zbinduje, jakby zmapuje do obiektu
 
-builder.Services.AddSingleton(authenticationSetting)
+builder.Services.AddSingleton(authenticationSetting);
 
 builder.Services.AddAuthentication(option =>
 {
